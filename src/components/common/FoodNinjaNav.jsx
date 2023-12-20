@@ -29,21 +29,21 @@ const FoodNinjaNav = () => {
             </div>
 
             <div
-              className={`flex flex-col sm:flex-row fixed sm:relative top-0 left-[-100%] sm:left-0 duration-700 md:transition-none  justify-center sm:justify-between
-           items-center ${head ? "" : "!left-0 bg-white h-full w-full sm:w-auto flex flex-col items-center justify-center"}`}
+              className={`flex  flex-col sm:flex-row fixed sm:relative top-0 left-[-100%] sm:left-0 duration-700 transition-all  justify-center sm:justify-between
+           items-center ${head ? "h-full w-full sm:h-auto sm:w-auto" : "!left-0 bg-white h-full w-full sm:w-auto flex flex-col items-center justify-center"}`}
             >
               <ul className="flex gap-5 flex-col sm:flex-row items-center">
-                <li className="relative">
+                <li>
                 <Link to='/' onClick={showUl} className="relative after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all  after:ease-in-out ease-in-out after:duration-300 duration-300 after:bg-Slate-Gray after:absolute after:bottom-[-3px] hover:after:w-full hover:after:left-0 after:left-[50%] z-50 text-Slate-Gray font-roboto text-sm leading-[100%] font-normal">
                  Blog
               </Link>
                 </li>
-                <li className="relative">
+                <li>
                 <Link  onClick={showUl} className="relative after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all  after:ease-in-out ease-in-out after:duration-300 duration-300 after:bg-Slate-Gray after:absolute after:bottom-[-3px] hover:after:w-full hover:after:left-0 after:left-[50%] text-Slate-Gray font-roboto text-sm leading-[100%] font-normal">
                  About
              </Link>
                 </li>
-                <li className="relative">
+                <li>
                 <Link  onClick={showUl} className="relative after:content-[''] after:w-0 after:h-[2px] after:transition-all transition-all  after:ease-in-out ease-in-out after:duration-300 duration-300 after:bg-Slate-Gray after:absolute after:bottom-[-3px] hover:after:w-full hover:after:left-0 after:left-[50%] text-Slate-Gray font-roboto text-sm leading-[100%] font-normal">
                  Contact
              </Link>

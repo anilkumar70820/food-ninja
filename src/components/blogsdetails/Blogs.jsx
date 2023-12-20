@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import post_thumbnail from "../../assets/images/webp/Post_Thumbnail.webp";
 import george_costanza from "../../assets/images/svg/george_costanza.svg";
 import george_costanza2 from "../../assets/images/webp/george_costanza.webp";
@@ -10,6 +10,9 @@ import BackToTop from "../common/BackToTop";
 import { Link } from "react-router-dom";
 
 const Blogs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, []);
   return (
     <>
     <><FoodNinjaNav/></>
@@ -188,7 +191,7 @@ const Blogs = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1440px] mx-auto 2xl:px-0 px-3 lg:mb-[147px] md:mb-20 mb-10 mt-10">
+      <div className="max-w-[1440px] mx-auto 2xl:px-0 px-3 lg:mb-[147px] md:mb-20 mb-[50px] mt-[50px]">
         <div className="flex gap-6 flex-wrap xl:ms-[170px] xl:max-w-[1182px] justify-between ">
           <div className="max-w-[382px] px-[27px] py-[38px] bg-violet rounded-[5px]">
             <h3 className="text-white text-center font-merriweather text-xmd font-black leading-[160%] max-w-[182px] mx-auto mb-[13px]">
