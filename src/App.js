@@ -1,16 +1,17 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import AllBlogs from './components/AllBlogs';
-import Blogs from './components/Blogs';
-import FoodNinjaFooter from './components/common/FoodNinjaFooter';
-import FoodNinjaNav from './components/common/FoodNinjaNav';
+import Blogs from './components/blogsdetails/Blogs';
+import Preloader from './components/common/Preloader';
 
 function App() {
   return (
   <>
-  <FoodNinjaNav/>
-  <Blogs/>
-  <FoodNinjaFooter/>
-  <AllBlogs/>
+<Preloader/>
+  <Routes>
+    <Route path='/' element={<AllBlogs/>}/>
+    <Route path='/blogs' element={<Blogs/>}/>
+  </Routes>
   </>
   );
 }
